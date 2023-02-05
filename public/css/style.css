@@ -4,6 +4,7 @@
   width: 100%;
   display: inline-block;
   position: fixed;
+  top: 0;
   margin-bottom: 20px;
 }
 
@@ -38,7 +39,23 @@ body {
   font-family: Verdana, monospace;
 }
 
+/*Sets diff navbar logic for easy view on current page*/
 #navbar #current-page {
   color: #fdc57b;
   text-decoration: overline;
+}
+
+main {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#photo-home {
+  width: 600px;
+}
+
+main p {
+  margin-top: 0;
 }
