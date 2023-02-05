@@ -28,5 +28,11 @@ app.get("/works", (req, res) => {
   res.sendFile(__dirname + "/views/works.html");
 });
 
+// 4th page /gallery
+app.get("/gallery", (req, res) => {
+    console.log(request);
+    res.sendFile(__dirname + "/views/gallery.html");
+  });
+
 // Start the server and sets the listening port
 app.listen(port, () => console.log(`app listening on port ${port}! `));
